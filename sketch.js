@@ -46,8 +46,9 @@ function draw() {
   axes() 
   
   //Title of graph
-  textAlign(CENTER,CENTER)
-  text("Forcast Temperature", width/2, height*0.1)
+  
+  
+  labels()
 }
 
 function keyPressed() {
@@ -60,4 +61,25 @@ function axes() {
   
   //x-axis
   line(height*0.1, width-240, height*1.4, width-240)
+}
+
+//Labeling the x and y axes
+function labels() {
+  
+  //Label of x-axis
+  textAlign(CENTER,CENTER)
+  //textStyle(BOLD)
+  text("Day", width/2, height*0.95)
+  
+  //Label of Graph
+  textAlign(CENTER,CENTER)
+  //textStyle(BOLD)
+  text("Forcast Temperature", width/2, height*0.1)
+  
+  //Label of y-axis
+  textAlign(CENTER,CENTER)
+  translate(25, 200)
+  rotate(PI*1.5)
+  //textStyle(BOLD)
+  text("Temperature (In Fahrenheit)", 0, 0)
 }
