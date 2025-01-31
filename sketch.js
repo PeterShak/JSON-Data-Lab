@@ -83,3 +83,5 @@ function labels() {
   //textStyle(BOLD)
   text("Temperature (In Fahrenheit)", 0, 0)
 }
+
+//push() and pop() to not affect the rest of the graph when translating?
