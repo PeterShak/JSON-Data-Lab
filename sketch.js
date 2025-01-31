@@ -42,11 +42,22 @@ function draw() {
   }
   
   // console.log(images)
-    
+  
+  axes() 
+  
+  //Title of graph
   textAlign(CENTER,CENTER)
   text("Forcast Temperature", width/2, height*0.1)
 }
 
 function keyPressed() {
   redraw()
+}
+
+function axes() {
+  //y-axis
+  line(dx, height*0.1, dx, height*0.9)
+  
+  //x-axis
+  line(height*0.1, width-240, height*1.4, width-240)
 }
