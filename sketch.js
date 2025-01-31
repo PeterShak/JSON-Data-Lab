@@ -42,6 +42,9 @@ function draw() {
   }
   
   // console.log(images)
+    
+  textAlign(CENTER,CENTER)
+  text("Forcast Temperature", width/2, height*0.1)
 }
 
 function keyPressed() {
